@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiya Huang's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <canvas id="background-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home" class="logo">Qiya Huang</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page active">
+        <section class="hero">
+            <h1 class="fade-in">I'm interested in how we bring experiences across time and space.</h1>
+            <div class="scroll-indicator" id="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about-page" class="page">
+        <div class="container">
+            <!-- Optional: Add your photo here -->
+            <div class="photo-placeholder">
+                [Your Photo Here]<br>
+                Optional
+            </div>
+
+            <div class="about-section fade-in-section">
+                <h2>From Paper to Presence</h2>
+                <p>When I was younger, I spent a lot of time sketching. What fascinated me wasn't accuracy — it was the moment when a few lines could suggest depth, movement, or mood. A sketch never fully reproduces what you see, yet somehow it captures something real: intention, atmosphere, a feeling of being there. </p>
+                <p>I learned early on that representation is not just about translating 3D into 2D. It's about choosing what to preserve — and what can be left unsaid.</p>
+                <p>That question stayed with me.</p>
+            </div>
+
+            <div class="about-section fade-in-section">
+                <h2>Learning to Work With Abstractions</h2>
+                <p>I later found myself studying data science, working with another kind of abstraction: numbers, patterns, models. I learned how to describe human behavior through data — how to compress complex realities into something measurable and communicable.</p>
+                <p>
+                    But something felt incomplete.<br>
+                    Data could explain <em>what</em> was happening, sometimes even <em>why</em>.<br>
+                    It rarely captured <em>how it felt</em>.
+                </p>
+                <p>
+                    I kept wondering:<br>
+                    What happens to experience when we reduce it too much?<br>
+                    What gets lost — and what might be preserved differently?
+                </p>
+            </div>
+
+            <div class="about-section fade-in-section">
+                <h2>Encountering XR</h2>
+                <p>During my undergraduate years, I took a course in interactive computing and began experimenting with digital interaction.
+                    Around that time, I first encountered XR through the NYU Reality Lab.
+                </p>
+                <p>It wasn't perfect. The devices were limited. The visuals were sometimes rough. The illusion could break.</p>           
+                <p>But despite those limitations, something important happened.</p>
+                <p>XR didn't try to describe space — it <em>placed</em> you inside one.<br>It didn't ask you to imagine — it let you move, look around, and orient yourself.</p>
+                <p>For the first time, I saw a medium that treated <em>presence itself</em> as a form of communication.</p>
+                <p>That shift mattered to me more than realism ever could.</p>
+             </div>
+
+            <div class="about-section fade-in-section">
+                <h2>What I'm Exploring Now</h2>
+                <p>Today, I'm a graduate student in data science, still working with abstractions — but I'm increasingly drawn to building experiences instead of explanations.</p>
+                <p>I'm interested in XR not as spectacle, and not as entertainment, but as a way to make experiences more accessible.</p>
+                <p>To let people learn by being there.<br>
+                    To understand through movement, space, and interaction.<br>
+                    To encounter ideas without needing them fully translated into words or numbers.
+                </p>
+                <p>I see XR as a bridge between analysis and intuition — between knowing <em>about</em> something and sensing it directly.</p>
+
+            </div>
+        </div>
+    </div>
+
+<!-- Work Page -->
+    <div id="work-page" class="page">
+        <div class="container wide">
+
+            <!-- Work Sections -->
+            <div class="work-sections">
+
+                <!-- ========== SECTION 1 ========== -->
+                <section class="work-section fade-in-section">
+                    <h2>Learning Interaction Through Constraints</h2>
+
+                    <a href="#project-fruit-ninja" class="section-project">
+                        <video class="project-image" autoplay muted loop playsinline>
+                            <source src="assets/fruit-ninja.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-text">
+                            <h3>Fruit Ninja</h3>
+                            <p>Web-based 3D spatial play through mouse input</p>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- ========== SECTION 2 ========== -->
+                <section class="work-section fade-in-section">
+                    <h2>When Systems Try to Sense Us</h2>
+
+                    <a href="#project-unravel" class="section-project">
+                        <video class="project-image" autoplay muted loop playsinline>
+                            <source src="assets/unravel.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-text">
+                            <h3>Unravel the Message</h3>
+                            <p>Facial recognition and speech as input for transformation</p>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- ========== SECTION 3 ========== -->
+                <section class="work-section fade-in-section">
+                    <h2>Letting Experience Leave the Screen</h2>
+
+                    <a href="#project-worry-blower" class="section-project">
+                        <video class="project-image" autoplay muted loop playsinline>
+                            <source src="assets/worry-blower.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-text">
+                            <h3>Worry Blower</h3>
+                            <p>When emotion-sensing becomes physical installation</p>
+                            <span class="project-note">Built on: Unravel the Message</span>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- ========== SECTION 4 ========== -->
+                <section class="work-section fade-in-section">
+                    <h2>Speak in Space</h2>
+
+                    <div class="section-gallery">
+                        <a href="#project-3d-models" class="gallery-item">
+                            <div class="gallery-image">[Headphones]</div>
+                            <p>Headphones</p>
+                        </a>
+                        <a href="#project-3d-models" class="gallery-item">
+                            <div class="gallery-image">[Teddy Bear]</div>
+                            <p>Teddy Bear</p>
+                        </a>
+                        <a href="#project-3d-models" class="gallery-item">
+                            <div class="gallery-image">[Toast]</div>
+                            <p>Toast</p>
+                        </a>
+                        <a href="#project-3d-models" class="gallery-item">
+                            <div class="gallery-image">[Shin-chan]</div>
+                            <p>Shin-chan</p>
+                        </a>
+                        <a href="#project-3d-models" class="gallery-item">
+                            <div class="gallery-image">[Desk & Chair]</div>
+                            <p>Desk & Chair</p>
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- ========== ALL WORK ========== -->
+            <section class="all-work-section fade-in-section">
+                <h2>All Work</h2>
+
+                <div class="all-work-grid">
+                    <a href="#project-fruit-ninja" class="work-grid-card">
+                        <div class="grid-image">[Image]</div>
+                        <h4>Fruit Ninja</h4>
+                    </a>
+
+                    <a href="#project-forest-fire" class="work-grid-card">
+                        <div class="grid-image">[Image]</div>
+                        <h4>Forest Ice Fire 2D</h4>
+                    </a>
+
+                    <a href="#project-unravel" class="work-grid-card">
+                        <div class="grid-image">[Image]</div>
+                        <h4>Unravel the Message</h4>
+                    </a>
+
+                    <a href="#project-jellibop" class="work-grid-card">
+                        <div class="grid-image">[Image]</div>
+                        <h4>Jellibop</h4>
+                    </a>
+
+                    <a href="#project-worry-blower" class="work-grid-card">
+                        <div class="grid-image">[Image]</div>
+                        <h4>Worry Blower</h4>
+                    </a>
+
+                    <a href="#project-fisherman" class="work-grid-card">
+                        <div class="grid-image">[Image]</div>
+                        <h4>The Fisherman</h4>
+                    </a>
+
+                    <a href="#project-3d-models" class="work-grid-card">
+                        <div class="grid-image">[Image]</div>
+                        <h4>3D Modeling</h4>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Project Detail Pages Template -->
+
+    <!-- ========== PROJECT: FRUIT NINJA ========== -->
+    <div id="project-fruit-ninja" class="page">
+        <div class="project-container">
+            
+            <!-- Hero Image -->
+            <div class="project-hero">
+                [Hero Image/Video - Full width, tall]
+            </div>
+
+            <!-- Main Content -->
+            <div class="project-content">
+                
+                <!-- ① One-Liner -->
+                <section class="project-section">
+                    <p class="project-tagline">
+                        An exploration of how mouse-based input can reshape spatial interaction and the rules of play.
+                    </p>
+                </section>
+
+                <!-- ② Why I Built This -->
+                <section class="project-section">
+                    <h2>Why I Built This</h2>
+                    <p>
+                        I was curious about the relationship between control mechanics and spatial experience. 
+                        In VR and 3D environments, we often think of interaction as either body-based or controller-based. 
+                        But what happens when you use a simple 2D input like mouse movement to navigate a 3D space? 
+                        How does that constraint shape what's possible?
+                    </p>
+                </section>
+
+                <!-- Media -->
+                <div class="project-media">
+                    [Image/Video/GIF of interaction]
+                </div>
+
+                <!-- ③ What the Experience Is Like -->
+                <section class="project-section">
+                    <h2>What the Experience Is Like</h2>
+                    <p>
+                        <strong>The user does:</strong> Move the mouse to control a blade in 3D space, slicing through fruits that fall from above.
+                    </p>
+                    <p>
+                        <strong>The system responds:</strong> Fruits react with physics, breaking apart when hit. 
+                        The 3D camera perspective updates with mouse movement, creating a sense of spatial depth.
+                    </p>
+                    <p>
+                        <strong>The perception:</strong> Despite using just a mouse, there's a strong sense of presence in 3D space—
+                        the constraint becomes the mechanic itself.
+                    </p>
+                </section>
+
+                <!-- Media -->
+                <div class="project-media">
+                    [Screenshot/GIF showing gameplay]
+                </div>
+
+                <!-- ④ How It Works -->
+                <section class="project-section">
+                    <h2>How It Works</h2>
+                    <p>
+                        <strong>Input tracking:</strong> Mouse position is mapped to both blade position and camera angle.
+                    </p>
+                    <p>
+                        <strong>Spatial rendering:</strong> Three.js handles 3D rendering; fruit positions are calculated in world space.
+                    </p>
+                    <p>
+                        <strong>Collision detection:</strong> Simple AABB (axis-aligned bounding box) checks determine when the blade intersects fruit.
+                    </p>
+                    <p>
+                        <strong>Feedback:</strong> Visual breaking animations and score updates create immediate sensory response.
+                    </p>
+                </section>
+
+                <!-- ⑤ What I Learned -->
+                <section class="project-section">
+                    <h2>What I Learned</h2>
+                    <p>
+                        <strong>Constraint breeds creativity:</strong> The limitation of mouse-based input forced interesting design choices. 
+                        It wasn't about replicating VR—it was about finding what mouse input could do uniquely.
+                    </p>
+                    <p>
+                        <strong>Spatial presence isn't about fidelity:</strong> Players felt genuinely present in the space 
+                        even though the graphics were simple and the input method was 2D.
+                    </p>
+                    <p>
+                        <strong>Next steps:</strong> I'd like to explore hybrid input—combining mouse with other modalities 
+                        (like voice or gesture) to see how that changes the spatial experience further.
+                    </p>
+                </section>
+
+                <!-- Links -->
+                <div class="project-links">
+                    <a href="https://yourproject.com" target="_blank" class="project-link">Live Demo</a>
+                    <a href="https://documentation-link.com" target="_blank" class="project-link">Documentation</a>
+                </div>
+
+            </div>
+
+            <!-- Back Link -->
+            <div class="project-footer">
+                <a href="#work" class="back-link">← Back to Work</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ========== PROJECT: UNRAVEL THE MESSAGE ========== -->
+    <div id="project-unravel" class="page">
+        <div class="project-container">
+            
+            <div class="project-hero">
+                <div class="project-hero">
+                <video id="project-video" width="100%" height="100%" autoplay loop playsinline>
+                    <source src="assets/unravel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    
+                <button class="video-audio-toggle" id="audio-toggle">
+                    <span class="audio-icon">🔊</span>
+                </button>
+            </div>
+            </div>
+
+            <div class="project-content">
+                
+                <section class="project-section">
+                    <p class="project-tagline">
+                        An exploration of how facial recognition and speech transform the way we communicate across distance.
+                    </p>
+                </section>
+
+                <section class="project-section">
+                    <h2>Why I Built This</h2>
+                    <p>
+                        I was thinking about translation—not just language, but the way emotions and intentions 
+                        get transformed as they travel from one person to another. 
+                        What if we could make those transformations visible? 
+                        What if emotion itself became the data being passed through the system?
+                    </p>
+                </section>
+
+                <div class="project-media">
+                    [Image/Video of interaction]
+                </div>
+
+                <section class="project-section">
+                    <h2>What the Experience Is Like</h2>
+                    <p>
+                        <strong>The user does:</strong> Person A speaks and shows their face to a camera. 
+                        Their emotion (detected via facial recognition) and their words (captured via speech-to-text) become input.
+                    </p>
+                    <p>
+                        <strong>The system responds:</strong> The message gets transformed through three canvases: 
+                        facial data becomes visual patterns, words get broken and reassembled, 
+                        the result is displayed as abstract representations rather than literal text.
+                    </p>
+                    <p>
+                        <strong>The perception:</strong> The viewer sees the original message, then sees how it changes. 
+                        The loss and transformation becomes the art itself.
+                    </p>
+                </section>
+
+                <div class="project-media">
+                    [Screenshot showing the three canvases]
+                </div>
+
+                <section class="project-section">
+                    <h2>How It Works</h2>
+                    <p>
+                        <strong>Facial recognition:</strong> A pre-trained model detects emotion (happy, sad, surprised, etc.) 
+                        and maps it to visual parameters.
+                    </p>
+                    <p>
+                        <strong>Speech-to-text:</strong> Real-time transcription captures what's being said.
+                    </p>
+                    <p>
+                        <strong>Three-canvas transformation:</strong> Each canvas applies different algorithmic transformations 
+                        (glitch effects, color shifts, word scrambling) to show progressive "degradation" of the message.
+                    </p>
+                </section>
+
+                <section class="project-section">
+                    <h2>What I Learned</h2>
+                    <p>
+                        <strong>Emotion as data is complex:</strong> Facial recognition can detect surface emotions, 
+                        but it misses nuance. The system sometimes got it wrong—and those failures were actually more interesting.
+                    </p>
+                    <p>
+                        <strong>Abstraction can communicate better than literal representation:</strong> 
+                        By refusing to show the exact words or emotions, the piece invited interpretation rather than consumption.
+                    </p>
+                    <p>
+                        <strong>Next steps:</strong> I wanted to make this physical. What if the transformation wasn't just visual? 
+                        This eventually led to Worry Blower.
+                    </p>
+                </section>
+
+                <div class="project-links">
+                    <a href="https://wp.nyu.edu/cassie/2023/12/09/documentation-of-project-b/" target="_blank" class="project-link">Full Documentation</a>
+                    <a href="https://github.com/yourrepo" target="_blank" class="project-link">Code</a>
+                </div>
+
+            </div>
+
+            <div class="project-footer">
+                <a href="#work" class="back-link">← Back to Work</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ========== PROJECT: WORRY BLOWER ========== -->
+    <div id="project-worry-blower" class="page">
+        <div class="project-container">
+            
+            <div class="project-hero">
+                <video id="project-video" width="100%" height="100%" autoplay loop playsinline>
+                    <source src="assets/worry-blower.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    
+                <button class="video-audio-toggle" id="audio-toggle">
+                    <span class="audio-icon">🔊</span>
+                </button>
+            </div>
+
+            <script>
+                // Video audio toggle
+                const video = document.getElementById('project-video');
+                const audioToggle = document.getElementById('audio-toggle');
+    
+                // 默认静音
+                video.muted = true;
+    
+                audioToggle.addEventListener('click', () => {
+                    video.muted = !video.muted;
+                    audioToggle.classList.toggle('muted');
+                    audioToggle.classList.toggle('unmuted');
+                });
+                
+                // 设置初始状态
+                audioToggle.classList.add('muted');
+            </script>
+
+            <div class="project-content">
+                
+                <section class="project-section">
+                    <p class="project-tagline">
+                        An exploration of bringing digital emotion-sensing into physical space through breath and light.
+                    </p>
+                </section>
+
+                <section class="project-section">
+                    <h2>Why I Built This</h2>
+                    <p>
+                        After building Unravel the Message, I wondered: what if the system didn't just show emotion, 
+                        but responded to it with physical presence? 
+                        What if people could interact with something that literally breathes with them?
+                    </p>
+                </section>
+
+
+                <section class="project-section">
+                    <h2>What the Experience Is Like</h2>
+                    <p>
+                        <strong>The user does:</strong> Stand in front of the installation. 
+                        Your face is recognized, your voice is heard, your worries are captured.
+                    </p>
+                    <p>
+                        <strong>The system responds:</strong> A mechanical fan controlled by Arduino responds to your emotional state. 
+                        LED lights shift color based on detected emotion. The installation literally breathes—
+                        exhaling and inhaling in sync with your emotional energy.
+                    </p>
+                    <p>
+                        <strong>The perception:</strong> You're not just interacting with a screen. 
+                        The system's presence in the room makes the interaction feel reciprocal—
+                        it's not just reading you; it's responding with its own physical presence.
+                    </p>
+                </section>
+
+                <div class="project-media">
+                    [Video of breathing effect]
+                </div>
+
+                <section class="project-section">
+                    <h2>How It Works</h2>
+                    <p>
+                        <strong>Facial recognition + speech-to-text:</strong> Same core as Unravel; detects emotion and captures words.
+                    </p>
+                    <p>
+                        <strong>Arduino connection:</strong> p5.js communicates with Arduino via serial to control motor speed and LED colors.
+                    </p>
+                    <p>
+                        <strong>Gear mechanism:</strong> Mechanical gears translate motor rotation into fan blade movement, 
+                        creating that visceral sense of "breathing."
+                    </p>
+                </section>
+
+                <section class="project-section">
+                    <h2>What I Learned</h2>
+                    <p>
+                        <strong>Physical presence changes everything:</strong> The same emotion-sensing system felt fundamentally different 
+                        when it had a body. People took it more seriously. They felt more heard.
+                    </p>
+                    <p>
+                        <strong>Technical constraints taught design lessons:</strong> The fan had limited speed range, 
+                        so we had to be creative about how emotion mapped to breath rate.
+                    </p>
+                    <p>
+                        <strong>Next steps:</strong> Explore multi-sensory feedback—what if the installation could also produce sound or heat? 
+                        How would that deepen the sense of presence further?
+                    </p>
+                </section>
+
+                <div class="project-links">
+                    <a href="https://wp.nyu.edu/cassie/2024/05/11/final-project-worry-blower/" target="_blank" class="project-link">Full Documentation</a>
+                </div>
+
+            </div>
+
+            <div class="project-footer">
+                <a href="#work" class="back-link">← Back to Work</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ========== PROJECT: 3D MODELING ========== -->
+    <div id="project-3d-models" class="page">
+        <div class="project-container">
+            
+            <div class="project-hero">
+                [Hero Image showing all models]
+            </div>
+
+            <div class="project-content">
+                
+                <section class="project-section">
+                    <p class="project-tagline">
+                        A collection of 3D models exploring form, space, and the language of three-dimensional thinking.
+                    </p>
+                </section>
+
+                <section class="project-section">
+                    <h2>Why I Built This</h2>
+                    <p>
+                        To build immersive experiences, I needed to learn how to think spatially. 
+                        These models are my alphabet—each one taught me something about form, proportion, and how objects exist in space.
+                    </p>
+                </section>
+
+                <div class="project-media">
+                    [Carousel or grid of all models]
+                </div>
+
+                <section class="project-section">
+                    <h2>The Models</h2>
+                    <p>
+                        <strong>Headphones:</strong> Learning curves and hard-surface modeling.
+                    </p>
+                    <p>
+                        <strong>Teddy Bear:</strong> Organic forms and soft shapes.
+                    </p>
+                    <p>
+                        <strong>Toast:</strong> Simplicity and how to convey texture.
+                    </p>
+                    <p>
+                        <strong>Shin-chan:</strong> Character proportions and expressive form.
+                    </p>
+                    <p>
+                        <strong>Desk & Chair:</strong> Spatial relationships and how objects interact.
+                    </p>
+                </section>
+
+                <section class="project-section">
+                    <h2>What I Learned</h2>
+                    <p>
+                        <strong>Form teaches itself:</strong> By modeling different objects, I developed intuition about 
+                        how shapes work together and what makes something feel "right" spatially.
+                    </p>
+                    <p>
+                        <strong>Constraints shape creativity:</strong> Each modeling challenge required different technical approaches, 
+                        which taught me flexibility.
+                    </p>
+                    <p>
+                        <strong>Next steps:</strong> Integrate these models into immersive experiences. 
+                        Spatial fluency is foundational; now I want to use it to build worlds.
+                    </p>
+                </section>
+
+            </div>
+
+            <div class="project-footer">
+                <a href="#work" class="back-link">← Back to Work</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact-page" class="page">
+        <div class="contact-section">
+            <h2>Let's Talk</h2>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">I'm looking for collaborators and opportunities to explore XR for accessibility and presence.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:qh2044@nyu.edu">Email</a>
+                <a href="https://github.com/cassiehuang72" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/qiya-huang-753213219/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
